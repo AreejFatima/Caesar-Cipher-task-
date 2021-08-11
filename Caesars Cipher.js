@@ -9,12 +9,12 @@
 
 
 function rot13(str) {
-  var result=""
-  for(var i=0;i<str.length;i++){
-    var char=str[i] 
+  let result=""
+  for(let i=0;i<str.length;i++){
+    let char=str[i] 
     
     if(char.length === 1 && char.match(/[A-Z]/i)){
-      var ascii=str.charCodeAt(i);
+      let ascii=str.charCodeAt(i);
       char=String.fromCharCode((ascii + 13-65) % 26+65);
        }
 
